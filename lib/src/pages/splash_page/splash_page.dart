@@ -9,6 +9,15 @@ class SplashPages extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<SplashPages> {
+
+
+  @override
+  void initState(){
+    WidgetsBinding.instance.addPostFrameCallback((_){ 
+      Navigator.of(context).pushReplacementNamed('/auth/login');
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(body:Center(child: Image.asset('assets/images/logo_vertical.png'),));
