@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('jkhkjh')),
       body: SingleChildScrollView(child: Container(constraints: BoxConstraints(minHeight: sizeOf.height),
-      decoration: BoxDecoration(image: DecorationImage(image: 'assets/images/background_login.png')),)),
+      decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/background_login.png'),)),
     );
   }
 }
