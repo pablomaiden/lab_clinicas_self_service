@@ -2,10 +2,10 @@
 
 import 'package:fe_lab_clinicas_core/fe_lab_clinicas_core.dart';
 
-abstract interface class UserLoginService{
+abstract interface class UserLoginService {
 
 
-Future<Either<ServcieException,Unit>> execute (String email, String password);
+Future<Either<ServiceException,Unit>> execute (String email, String password);
 
 
 }
