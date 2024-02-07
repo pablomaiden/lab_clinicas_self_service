@@ -26,10 +26,17 @@ class HomePage extends StatelessWidget {
              decoration: BoxDecoration(color: Colors.white, 
              borderRadius: BorderRadius.circular(16),border: Border.all(color: LabClinicasTheme.orangeColor)),
              child: Column(mainAxisSize: MainAxisSize.min,
-             children: [Text('Bem vindo', style: LabClinicasTheme.titleStyle,), 
-             SizedBox(height: 32,),
+             children: [const Text('Bem vindo', 
+             style: LabClinicasTheme.titleStyle,), 
+             const SizedBox(height: 32,),
 
-             SizedBox(width: sizeOf.width * .8, height: 48, child: ElevatedButton(onPressed: (){}, child: Text('INICIAR TERMINAL')))],)),
+             SizedBox(width: sizeOf.width * .8, height: 48, 
+             child: ElevatedButton(onPressed: (){
+
+                  Navigator.of(context).pushReplacementNamed('/self-service');
+
+
+             }, child: Text('INICIAR TERMINAL')))],)),
            ),
        );
   }
